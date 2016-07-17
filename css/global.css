@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:100,300,400";
+@import "https://fonts.googleapis.com/css?family=Lato";
 body {
   /* Background Image Option
   background-image: url(../../images/bg2.jpg);
@@ -6,14 +7,25 @@ body {
   background-position: bottom;
   background-size: cover;
   Fim Background Image Option */
-  background-image: #FFFFFF;
+  background: red;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#fff, #eeeeee);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#fff, #eeeeee);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#fff, #eeeeee);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#fff, #eeeeee);
+  /* Standard syntax */
   color: #1f2023;
   margin: 0; }
 
 #introduction {
-  height: -webkit-calc(100% - 40px);
-  height: -moz-calc(100% - 40px);
-  height: calc(100% - 40px); }
+  height: -webkit-calc(100% - 10px);
+  height: -moz-calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-image: url(../../images/crack.png);
+  background-repeat: no-repeat; }
   #introduction .align-vertical-center {
     position: relative;
     top: 50%;
@@ -32,37 +44,53 @@ body {
       #introduction .align-vertical-center .big-font .featured {
         color: #a73275;
         text-transform: uppercase; }
-
-#social {
-  height: 20px;
-  width: 100%;
-  top: 0; }
-  #social .icon {
-    width: 20px;
+  #introduction #social {
     height: 20px;
-    margin-right: 20px;
-    float: left; }
-  #social #facebook {
-    background-image: url(../../images/icon-fb.png); }
-    #social #facebook:hover {
-      background-image: url(../../images/icon-fb-hover.png); }
-  #social #twitter {
-    background-image: url(../../images/icon-twitter.png); }
-    #social #twitter:hover {
-      background-image: url(../../images/icon-twitter-hover.png); }
-  #social #linkedin {
-    background-image: url(../../images/icon-linkedin.png); }
-    #social #linkedin:hover {
-      background-image: url(../../images/icon-linkedin-hover.png); }
-  #social #git {
-    background-image: url(../../images/icon-git.png); }
-    #social #git:hover {
-      background-image: url(../../images/icon-git-hover.png); }
+    width: 100%;
+    top: 0; }
+    #introduction #social .icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 20px;
+      float: left; }
+    #introduction #social #facebook {
+      background-image: url(../../images/icon-fb.png); }
+      #introduction #social #facebook:hover {
+        background-image: url(../../images/icon-fb-hover.png); }
+    #introduction #social #twitter {
+      background-image: url(../../images/icon-twitter.png); }
+      #introduction #social #twitter:hover {
+        background-image: url(../../images/icon-twitter-hover.png); }
+    #introduction #social #linkedin {
+      background-image: url(../../images/icon-linkedin.png); }
+      #introduction #social #linkedin:hover {
+        background-image: url(../../images/icon-linkedin-hover.png); }
+    #introduction #social #git {
+      background-image: url(../../images/icon-git.png); }
+      #introduction #social #git:hover {
+        background-image: url(../../images/icon-git-hover.png); }
 
 #detail {
   height: 10px;
   width: 100%;
   bottom: 0;
   background-color: #a73275; }
+
+#about-me {
+  background-color: #1f2023;
+  color: white;
+  padding-top: 50px;
+  font-family: 'Lato', sans-serif; }
+  #about-me h4 {
+    color: #a73275; }
+  #about-me .photo {
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto; }
+  #about-me #info-me {
+    margin-top: 20px; }
+  #about-me .chip {
+    margin-right: 20px; }
 
 /*# sourceMappingURL=global.css.map */

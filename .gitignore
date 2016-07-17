@@ -4,9 +4,7 @@
 # or operating system, you probably want to add a global ignore instead:
 # git config --global core.excludesfile ~/.gitignore_global
  
-# Ignore bundler config
 /scss
 /.sass-cache
 /.DS_Store
-/css/global.css.map
-/css/materialize.css.map
+*.map
