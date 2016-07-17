@@ -7,7 +7,8 @@ body {
   background-size: cover;
   Fim Background Image Option */
   background-image: #FFFFFF;
-  color: #1f2023; }
+  color: #1f2023;
+  margin: 0; }
 
 #introduction {
   height: -webkit-calc(100% - 40px);
