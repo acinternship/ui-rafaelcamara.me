@@ -1,0 +1,145 @@
+$pretty-purple: #20aebb;
+$black-grey: #20aebb;
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400';
+@import 'https://fonts.googleapis.com/css?family=Lato';
+body {
+    /* Background Image Option
+    background-image: url(../../images/bg2.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    Fim Background Image Option */
+    
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#fff, #eeeeee); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff, #eeeeee); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff, #eeeeee); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff, #eeeeee); /* Standard syntax */
+    color: $black-grey;
+    
+    margin: 0;
+}
+
+#introduction {
+    height: -webkit-calc(100% - 10px);
+    height:    -moz-calc(100% - 10px);
+    height:         calc(100% - 10px);
+    
+     
+    background-image: url(../../images/crack.png);
+    background-repeat: no-repeat;
+
+    .align-vertical-center {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); 
+        /* etc */
+        -webkit-transform: translateY(-50%);
+
+        padding: 20px;
+        
+        font-weight: 200;
+ 
+        .featured {
+            color: $pretty-purple;
+            text-transform: uppercase;
+            font-size: 1.0em;
+            color: black;
+        }
+        
+        .big-font {
+            font-size: 2.5em;
+            font-weight: 200;
+            
+            
+        }
+    }   
+    
+    #social {
+        height: 20px;
+        width:100%;
+
+        top:0;
+
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+
+            float: left;
+        }
+
+        #facebook {
+            background-image: url(../../images/icon-fb.png);
+
+            &:hover {
+                background-image: url(../../images/icon-fb-hover.png);
+            }
+        }
+
+        #twitter {
+            background-image: url(../../images/icon-twitter.png);
+
+            &:hover {
+                background-image: url(../../images/icon-twitter-hover.png);
+            }
+        }
+
+        #linkedin {
+            background-image: url(../../images/icon-linkedin.png);
+
+            &:hover {
+                background-image: url(../../images/icon-linkedin-hover.png);
+            }
+        }
+
+        #git {
+            background-image: url(../../images/icon-git.png);
+
+            &:hover {
+                background-image: url(../../images/icon-git-hover.png);
+            }
+        }
+    }
+}
+
+#detail {
+    height: 10px;
+    width:100%;
+
+    bottom:0;
+    background-color: $pretty-purple;
+}
+
+#about-me {
+    background-color: $black-grey;
+    color: white;
+    
+    padding-top: 50px;
+    font-weight: 200;
+    
+    h4 {
+        color: white;
+        font-weight: 100;
+    }
+    h5 {
+        font-weight: 200; 
+    }
+   
+    .photo {
+        width: 150px;
+        height: 150px;
+        
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #info-me {
+        margin-top: 20px;
+    }
+    
+    .chip {
+        margin-right: 20px;
+    }
+}
