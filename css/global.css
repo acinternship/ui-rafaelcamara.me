@@ -1,0 +1,67 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:100,300,400";
+body {
+  /* Background Image Option
+  background-image: url(../../images/bg2.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  Fim Background Image Option */
+  background-image: #FFFFFF;
+  color: #1f2023; }
+
+#introduction {
+  height: -webkit-calc(100% - 40px);
+  height: -moz-calc(100% - 40px);
+  height: calc(100% - 40px); }
+  #introduction .align-vertical-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    /* etc */
+    -webkit-transform: translateY(-50%);
+    padding: 20px;
+    font-weight: 200; }
+    #introduction .align-vertical-center .featured {
+      color: #a73275;
+      text-transform: uppercase;
+      font-size: 1.0em; }
+    #introduction .align-vertical-center .big-font {
+      font-size: 2.5em;
+      font-weight: 200; }
+      #introduction .align-vertical-center .big-font .featured {
+        color: #a73275;
+        text-transform: uppercase; }
+
+#social {
+  height: 20px;
+  width: 100%;
+  top: 0; }
+  #social .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    float: left; }
+  #social #facebook {
+    background-image: url(../../images/icon-fb.png); }
+    #social #facebook:hover {
+      background-image: url(../../images/icon-fb-hover.png); }
+  #social #twitter {
+    background-image: url(../../images/icon-twitter.png); }
+    #social #twitter:hover {
+      background-image: url(../../images/icon-twitter-hover.png); }
+  #social #linkedin {
+    background-image: url(../../images/icon-linkedin.png); }
+    #social #linkedin:hover {
+      background-image: url(../../images/icon-linkedin-hover.png); }
+  #social #git {
+    background-image: url(../../images/icon-git.png); }
+    #social #git:hover {
+      background-image: url(../../images/icon-git-hover.png); }
+
+#detail {
+  height: 10px;
+  width: 100%;
+  bottom: 0;
+  background-color: #a73275; }
+
+/*# sourceMappingURL=global.css.map */
