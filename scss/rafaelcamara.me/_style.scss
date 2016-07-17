@@ -1,5 +1,6 @@
-$pretty-purple: #20aebb;
-$black-grey: #20aebb;
+$pretty-blue: #20aebb;
+$black-grey: #2B2B2B;
+$title-header: #FFFFFF;
 
 @import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400';
 @import 'https://fonts.googleapis.com/css?family=Lato';
@@ -11,12 +12,14 @@ body {
     background-size: cover;
     Fim Background Image Option */
     
-    background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#fff, #eeeeee); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#fff, #eeeeee); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#fff, #eeeeee); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#fff, #eeeeee); /* Standard syntax */
-    color: $black-grey;
+    background: white; /* For browsers that do not support gradients */
+    
+    background-image: url(../images/bg2.jpg);
+     background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+      
+    color: $title-header;
     
     margin: 0;
 }
@@ -25,10 +28,6 @@ body {
     height: -webkit-calc(100% - 10px);
     height:    -moz-calc(100% - 10px);
     height:         calc(100% - 10px);
-    
-     
-    background-image: url(../../images/crack.png);
-    background-repeat: no-repeat;
 
     .align-vertical-center {
         position: relative;
@@ -40,28 +39,30 @@ body {
         padding: 20px;
         
         font-weight: 200;
- 
+        text-align: center;
         .featured {
-            color: $pretty-purple;
+            color: $pretty-blue !important;
             text-transform: uppercase;
             font-size: 1.0em;
             color: black;
+            font-weight: bold;
         }
         
         .big-font {
-            font-size: 2.5em;
-            font-weight: 200;
-            
-            
+            font-size: 2.0em;
+            font-weight: bold;
+            text-transform: uppercase;
         }
     }   
     
     #social {
         height: 20px;
-        width:100%;
+        width:160px;
 
         top:0;
-
+        
+        margin-left: auto;
+        margin-right: auto;
         .icon {
             width: 20px;
             height: 20px;
@@ -71,34 +72,34 @@ body {
         }
 
         #facebook {
-            background-image: url(../../images/icon-fb.png);
+            background-image: url(../images/icon-fb.png);
 
             &:hover {
-                background-image: url(../../images/icon-fb-hover.png);
+                background-image: url(../images/icon-fb-hover.png);
             }
         }
 
         #twitter {
-            background-image: url(../../images/icon-twitter.png);
+            background-image: url(../images/icon-twitter.png);
 
             &:hover {
-                background-image: url(../../images/icon-twitter-hover.png);
+                background-image: url(../images/icon-twitter-hover.png);
             }
         }
 
         #linkedin {
-            background-image: url(../../images/icon-linkedin.png);
+            background-image: url(../images/icon-linkedin.png);
 
             &:hover {
-                background-image: url(../../images/icon-linkedin-hover.png);
+                background-image: url(../images/icon-linkedin-hover.png);
             }
         }
 
         #git {
-            background-image: url(../../images/icon-git.png);
+            background-image: url(../images/icon-git.png);
 
             &:hover {
-                background-image: url(../../images/icon-git-hover.png);
+                background-image: url(../images/icon-git-hover.png);
             }
         }
     }
@@ -109,7 +110,7 @@ body {
     width:100%;
 
     bottom:0;
-    background-color: $pretty-purple;
+    background-color: $black-grey;
 }
 
 #about-me {
@@ -123,10 +124,14 @@ body {
         color: white;
         font-weight: 100;
     }
+    
     h5 {
         font-weight: 200; 
     }
    
+    p {
+        font-family: 'Lato', sans-serif;
+    }
     .photo {
         width: 150px;
         height: 150px;

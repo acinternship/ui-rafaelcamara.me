@@ -7,25 +7,19 @@ body {
   background-position: bottom;
   background-size: cover;
   Fim Background Image Option */
-  background: red;
+  background: white;
   /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(#fff, #eeeeee);
-  /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#fff, #eeeeee);
-  /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#fff, #eeeeee);
-  /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#fff, #eeeeee);
-  /* Standard syntax */
-  color: #20aebb;
+  background-image: url(../images/bg2.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  color: #FFFFFF;
   margin: 0; }
 
 #introduction {
   height: -webkit-calc(100% - 10px);
   height: -moz-calc(100% - 10px);
-  height: calc(100% - 10px);
-  background-image: url(../../images/crack.png);
-  background-repeat: no-repeat; }
+  height: calc(100% - 10px); }
   #introduction .align-vertical-center {
     position: relative;
     top: 50%;
@@ -33,49 +27,54 @@ body {
     /* etc */
     -webkit-transform: translateY(-50%);
     padding: 20px;
-    font-weight: 200; }
+    font-weight: 200;
+    text-align: center; }
     #introduction .align-vertical-center .featured {
-      color: #20aebb;
+      color: #20aebb !important;
       text-transform: uppercase;
       font-size: 1.0em;
-      color: black; }
+      color: black;
+      font-weight: bold; }
     #introduction .align-vertical-center .big-font {
-      font-size: 2.5em;
-      font-weight: 200; }
+      font-size: 2.0em;
+      font-weight: bold;
+      text-transform: uppercase; }
   #introduction #social {
     height: 20px;
-    width: 100%;
-    top: 0; }
+    width: 160px;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto; }
     #introduction #social .icon {
       width: 20px;
       height: 20px;
       margin-right: 20px;
       float: left; }
     #introduction #social #facebook {
-      background-image: url(../../images/icon-fb.png); }
+      background-image: url(../images/icon-fb.png); }
       #introduction #social #facebook:hover {
-        background-image: url(../../images/icon-fb-hover.png); }
+        background-image: url(../images/icon-fb-hover.png); }
     #introduction #social #twitter {
-      background-image: url(../../images/icon-twitter.png); }
+      background-image: url(../images/icon-twitter.png); }
       #introduction #social #twitter:hover {
-        background-image: url(../../images/icon-twitter-hover.png); }
+        background-image: url(../images/icon-twitter-hover.png); }
     #introduction #social #linkedin {
-      background-image: url(../../images/icon-linkedin.png); }
+      background-image: url(../images/icon-linkedin.png); }
       #introduction #social #linkedin:hover {
-        background-image: url(../../images/icon-linkedin-hover.png); }
+        background-image: url(../images/icon-linkedin-hover.png); }
     #introduction #social #git {
-      background-image: url(../../images/icon-git.png); }
+      background-image: url(../images/icon-git.png); }
       #introduction #social #git:hover {
-        background-image: url(../../images/icon-git-hover.png); }
+        background-image: url(../images/icon-git-hover.png); }
 
 #detail {
   height: 10px;
   width: 100%;
   bottom: 0;
-  background-color: #20aebb; }
+  background-color: #2B2B2B; }
 
 #about-me {
-  background-color: #20aebb;
+  background-color: #2B2B2B;
   color: white;
   padding-top: 50px;
   font-weight: 200; }
@@ -84,6 +83,8 @@ body {
     font-weight: 100; }
   #about-me h5 {
     font-weight: 200; }
+  #about-me p {
+    font-family: 'Lato', sans-serif; }
   #about-me .photo {
     width: 150px;
     height: 150px;
