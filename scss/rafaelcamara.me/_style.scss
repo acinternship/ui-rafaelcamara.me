@@ -2,9 +2,11 @@ $pretty-blue: #20aebb;
 $pretty-orange: #d68811;
 $black-grey: #2B2B2B;
 $title-header: #FFFFFF;
+$chip-bg-color: #e4e4e4 !default;
 
 @import 'https://fonts.googleapis.com/css?family=Roboto:100,300,400';
 @import 'https://fonts.googleapis.com/css?family=Lato';
+
 body {
     /* Background Image Option
     background-image: url(../../images/bg2.jpg);
@@ -16,17 +18,89 @@ body {
     background: white; /* For browsers that do not support gradients */
     
     background-image: url(../images/bg2.jpg);
-     background-attachment: fixed;
+    background-attachment: fixed;
     background-position: bottom;
     background-size: cover;
-      
+    
+    font-family: 'Roboto', sans-serif;
     color: $title-header;
     
     margin: 0;
 
+    a {
+        text-decoration: none;
+    }
     p {
         font-family: 'Lato', sans-serif;
     }
+    
+    h4, h5 {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+
+        font-size: 2.28rem;
+
+        color: white;
+    }
+    
+    h4 {
+        font-weight: 100;
+    }
+    
+    h5 {
+        font-weight: 200; 
+    }
+    
+    .center {
+        text-align: center;
+    }
+    
+    .text-right {
+        text-align: right;
+    }
+
+    .mother {
+      margin: 0 auto;
+      max-width: 1280px;
+      width: 50%;
+    }
+
+    .chip {
+        height: 32px;
+
+        margin-right: 20px;
+        margin-top:10px;
+
+        padding: 0 12px;
+
+        display: inline-block;
+
+        font-size: 13px;
+        font-weight: 500;
+
+        color: rgba(0,0,0,.6);
+        line-height: 32px;
+
+        border-radius: 16px;
+        background-color: $chip-bg-color;
+
+        &:hover {
+            background-color: #2B2B2B;
+            color: #fff;
+        }
+    }
+    
+    .active {
+        background-color: $black-grey !important; 
+        color: white !important;
+    }
+}
+
+.box {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    margin-bottom:25px;
 }
 
 #introduction {
@@ -49,6 +123,7 @@ body {
         
         font-weight: 200;
         text-align: center;
+        
         .featured {
             color: $pretty-blue !important;
             text-transform: uppercase;
@@ -123,80 +198,61 @@ body {
 }
 
 #about-me {
+    width: 100%;
+    height: auto;
     background-color: $black-grey;
-    color: white;
-    
-    margin-bottom:25px;
-    
-    padding-top: 50px;
-    padding-bottom: 10px;
+
     font-weight: 200;
-    
-    h4 {
-        color: white;
-        font-weight: 100;
-    }
-    
-    h5 {
-        font-weight: 200; 
-    }
     
     .photo {
         width: 150px;
         height: 150px;
         
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
+          
+        .img-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+	        -moz-border-radius: 50%;
+        }
     }
     
     #info-me {
+        width: -webkit-calc(100% - 0px);
+        width:    -moz-calc(100% - 0px);
+        width:         calc(100% - 0px);
+        
+        min-width: 200px;
+        
         margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        
+        text-align: center;
     }
 }
 
 #skills {
     background-color: $pretty-orange;
-    
-    margin-bottom:25px;
-    
-    padding-top: 40px;
-    padding-bottom: 40px;
-    
+
     font-weight: 200;
-    
-    h4 {
-        color: white;
-        font-weight: 100;
-    }
-    
-    .chip {
-        margin-right: 20px;
-        margin-top:10px;
-    }
-    
-    .active {
-        background-color: $black-grey !important; 
-        color: white !important;
-    }
 }
 
 #experience {
     background-color: $black-grey;
     
-    margin-bottom:25px;
-    
-    padding-top: 40px;
-    padding-bottom: 40px;
-    
     font-weight: 200;
-    
-    h4 {
-        color: white;
-        font-weight: 100;
-    }
     
     .job-info {
         margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    
+    .job-info-last {
+        margin-bottom: 0px;
         margin-top: 50px;
     }
     
@@ -210,11 +266,7 @@ body {
 
 #education {
     background-color: $pretty-orange;
-    
-    margin-bottom:25px;
-    
-    padding-top: 40px;
-    padding-bottom: 40px;
+    height: 550px;
     
     font-weight: 200;
     
@@ -223,8 +275,67 @@ body {
         font-weight: 100;
     }
     
+    .align-vertical-center {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); 
+        /* etc */
+        -webkit-transform: translateY(-50%);
+    }
+    
+    .date {
+        width: 100%;
+        text-align: right;
+    }
+    
     .education-info {
-        height: 70px;
+        width: 90%;
+        height: auto;
+        background-color: white;
+        color: $black-grey;
+        
+        border-radius: 15px;
+        
+        margin-top: 30px;
+        padding: 15px;
+    }
+    
+    .left {
+        width: 50%;
+        height: 100%;
+        
+        float: left;
+        
+        .education-info {
+            border-bottom-left-radius: 0px;
+        }
+    }
+    
+    .right {
+        width: 50%;
+        height: 100%;
+                
+        float: right;
+        
+        .education-info {
+            border-bottom-right-radius: 0px;
+        }
+    }
+    
+    
+    
+    .info {
+        height: auto;
+        
+        font-family: 'Lato', sans-serif;
+        font-weight: 200;
+        
+        line-height: 32px;
+        
+        font-weight: 200;
+        text-align: left;
+        
+        padding-top: 2px;
     }
     
     .separator {
