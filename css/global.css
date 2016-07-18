@@ -15,11 +15,13 @@ body {
   background-size: cover;
   color: #FFFFFF;
   margin: 0; }
+  body p {
+    font-family: 'Lato', sans-serif; }
 
 #introduction {
-  height: -webkit-calc(100% - 10px);
-  height: -moz-calc(100% - 10px);
-  height: calc(100% - 10px); }
+  height: -webkit-calc(100% - 0px);
+  height: -moz-calc(100% - 0px);
+  height: calc(100% - 0px); }
   #introduction .align-vertical-center {
     position: relative;
     top: 50%;
@@ -76,15 +78,15 @@ body {
 #about-me {
   background-color: #2B2B2B;
   color: white;
+  margin-bottom: 25px;
   padding-top: 50px;
+  padding-bottom: 10px;
   font-weight: 200; }
   #about-me h4 {
     color: white;
     font-weight: 100; }
   #about-me h5 {
     font-weight: 200; }
-  #about-me p {
-    font-family: 'Lato', sans-serif; }
   #about-me .photo {
     width: 150px;
     height: 150px;
@@ -92,7 +94,20 @@ body {
     margin-right: auto; }
   #about-me #info-me {
     margin-top: 20px; }
-  #about-me .chip {
+
+#skills {
+  background-color: #d68811;
+  margin-bottom: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-weight: 200; }
+  #skills h4 {
+    color: white;
+    font-weight: 100; }
+  #skills .chip {
     margin-right: 20px; }
+  #skills .active {
+    background-color: #2B2B2B !important;
+    color: white !important; }
 
 /*# sourceMappingURL=global.css.map */

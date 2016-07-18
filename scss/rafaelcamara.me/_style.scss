@@ -1,4 +1,5 @@
 $pretty-blue: #20aebb;
+$pretty-orange: #d68811;
 $black-grey: #2B2B2B;
 $title-header: #FFFFFF;
 
@@ -22,12 +23,16 @@ body {
     color: $title-header;
     
     margin: 0;
+
+    p {
+        font-family: 'Lato', sans-serif;
+    }
 }
 
 #introduction {
-    height: -webkit-calc(100% - 10px);
-    height:    -moz-calc(100% - 10px);
-    height:         calc(100% - 10px);
+    height: -webkit-calc(100% - 0px);
+    height:    -moz-calc(100% - 0px);
+    height:         calc(100% - 0px);
 
     .align-vertical-center {
         position: relative;
@@ -117,7 +122,10 @@ body {
     background-color: $black-grey;
     color: white;
     
+    margin-bottom:25px;
+    
     padding-top: 50px;
+    padding-bottom: 10px;
     font-weight: 200;
     
     h4 {
@@ -128,10 +136,7 @@ body {
     h5 {
         font-weight: 200; 
     }
-   
-    p {
-        font-family: 'Lato', sans-serif;
-    }
+    
     .photo {
         width: 150px;
         height: 150px;
@@ -143,8 +148,29 @@ body {
     #info-me {
         margin-top: 20px;
     }
+}
+
+#skills {
+    background-color: $pretty-orange;
+    
+    margin-bottom:25px;
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    font-weight: 200;
+    
+    h4 {
+        color: white;
+        font-weight: 100;
+    }
     
     .chip {
         margin-right: 20px;
+    }
+    
+    .active {
+        background-color: $black-grey !important; 
+        color: white !important;
     }
 }
