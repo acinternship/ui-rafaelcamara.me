@@ -34,6 +34,10 @@ body {
     height:    -moz-calc(100% - 0px);
     height:         calc(100% - 0px);
 
+    a {
+        color: #fff;
+    }
+    
     .align-vertical-center {
         position: relative;
         top: 50%;
@@ -155,8 +159,8 @@ body {
     
     margin-bottom:25px;
     
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     
     font-weight: 200;
     
@@ -167,10 +171,66 @@ body {
     
     .chip {
         margin-right: 20px;
+        margin-top:10px;
     }
     
     .active {
         background-color: $black-grey !important; 
         color: white !important;
+    }
+}
+
+#experience {
+    background-color: $black-grey;
+    
+    margin-bottom:25px;
+    
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    font-weight: 200;
+    
+    h4 {
+        color: white;
+        font-weight: 100;
+    }
+    
+    .job-info {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    
+    .separator {
+        width: 100%;
+        height: 2px;
+        background-image: url(../images/line.png);
+        background-repeat: repeat-x;
+    }
+}
+
+#education {
+    background-color: $pretty-orange;
+    
+    margin-bottom:25px;
+    
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    font-weight: 200;
+    
+    h4 {
+        color: white;
+        font-weight: 100;
+    }
+    
+    .education-info {
+        height: 70px;
+    }
+    
+    .separator {
+        width: 100%;
+        height: 2px;
+        background-image: url(../images/line.png);
+        background-repeat: repeat-x;
     }
 }
