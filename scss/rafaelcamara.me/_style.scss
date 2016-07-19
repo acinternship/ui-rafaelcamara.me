@@ -288,7 +288,7 @@ body {
     
     .education-info {
         @media (max-width:1200px) {
-             width: 100%; //ERA 90
+            width: 100%; //ERA 90
             max-width: 400px;
         }
         
@@ -303,42 +303,17 @@ body {
         
         border-radius: 15px;
         
-        margin-top: 30px;
+        margin-top: 20px;
+        margin-left: 20px; // FLEX
         padding: 15px;
-    }
-    
-    .float-left {
-        float: left;
-        border-bottom-left-radius: 0px;
         
-        @media (max-width: 1200px) {
-            margin-right: 10px;
-            border-bottom-right-radius: 15px;
-            border-bottom-left-radius: 0px;
-        }
-        
-        @media (min-width: 1201px) {
-            margin-right: 0px;
-            border-bottom-right-radius: 0px;
-            border-bottom-left-radius: 15px;
-        }
-    }
-    
-    .float-right {
-        float: right;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 15px;
         
         @media (max-width: 1200px) {
             margin-left: 0px;
-            border-bottom-right-radius: 0px;
-            border-bottom-left-radius: 15px;
         }
-        
-        @media (min-width: 1201px) {
-            margin-left: 10px;
-            border-bottom-right-radius: 15px;
-            border-bottom-left-radius: 0px;
-        }
-    }    
+    }
     
     .info {
         height: auto;
@@ -360,58 +335,86 @@ body {
         background-image: url(../images/line.png);
         background-repeat: repeat-x;
     }
+    
+    
+    .flexbox-container {
+        width: 100%;
+        display: flex;
+       
+        justify-content: center;
+        align-items: center;
+        
+        @media (max-width: 1200px) {
+             flex-wrap: wrap;
+        }
+        
+    }
+    
+    .flexbox-container-column {
+        width: 100%; 
+
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-between;
+    }
 }
 
-#contact {
-    background-color: $black-grey;
-    
+#footer {
     font-weight: 200;
-    h4, .separator {
-        margin-bottom: 25px;
-    }
-    p {
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .separator {
-        width: 100%;
-        height: 2px;
-        background-image: url(../images/line.png);
-        background-repeat: repeat-x;
-    }
     
-    .field {
-        width: 50%;
-        
-        margin-bottom: 15px;
-        padding: 15px;
-        
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        
-        border: 0;
-    }
+    padding-top: 10px;
+    padding-bottom: 20px;
     
-    .input {
-        height: 40px;
-        text-align: center;
-    }
+
+    #social {
+        height: 20px;
+        width:160px;
+
+        top:0;
         
-    .textbox {
-        height: auto;
-        min-height: 100px;
-        text-align: left;
-    }
-    
-    .sendButton {
-        width: 50%;
-        background-color: white;
-        color: black;
-        
-        &:hover {
-            background-color: $pretty-orange;
-            color: white;
+        margin-left: auto;
+        margin-right: auto;
+      
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+
+            float: left;
+        }
+
+        #facebook {
+            background-image: url(../images/icon-fb.png);
+
+            &:hover {
+                background-image: url(../images/icon-fb-hover.png);
+            }
+        }
+
+        #twitter {
+            background-image: url(../images/icon-twitter.png);
+
+            &:hover {
+                background-image: url(../images/icon-twitter-hover.png);
+            }
+        }
+
+        #linkedin {
+            background-image: url(../images/icon-linkedin.png);
+
+            &:hover {
+                background-image: url(../images/icon-linkedin-hover.png);
+            }
+        }
+
+        #git {
+            background-image: url(../images/icon-git.png);
+
+            &:hover {
+                background-image: url(../images/icon-git-hover.png);
+            }
         }
     }
 }
+
