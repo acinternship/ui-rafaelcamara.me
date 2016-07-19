@@ -14,7 +14,6 @@ body {
     background-position: bottom;
     background-size: cover;
     Fim Background Image Option */
-    
     background: white; /* For browsers that do not support gradients */
     
     background-image: url(../images/bg2.jpg);
@@ -60,9 +59,9 @@ body {
     }
 
     .mother {
-      margin: 0 auto;
-      max-width: 1280px;
-      width: 50%;
+        margin: 0 auto;
+        max-width: 1280px;
+        width: 50%;
     }
 
     .chip {
@@ -266,8 +265,7 @@ body {
 
 #education {
     background-color: $pretty-orange;
-    height: 550px;
-    
+    min-height: 300px;
     font-weight: 200;
     
     h4 {
@@ -289,7 +287,16 @@ body {
     }
     
     .education-info {
-        width: 90%;
+        @media (max-width:1200px) {
+             width: 100%; //ERA 90
+            max-width: 400px;
+        }
+        
+        @media (min-width: 1201px) {
+             width: 44%; //ERA 90
+        }
+        
+       
         height: auto;
         background-color: white;
         color: $black-grey;
@@ -300,29 +307,38 @@ body {
         padding: 15px;
     }
     
-    .left {
-        width: 50%;
-        height: 100%;
-        
+    .float-left {
         float: left;
+        border-bottom-left-radius: 0px;
         
-        .education-info {
+        @media (max-width: 1200px) {
+            margin-right: 10px;
+            border-bottom-right-radius: 15px;
             border-bottom-left-radius: 0px;
         }
-    }
-    
-    .right {
-        width: 50%;
-        height: 100%;
-                
-        float: right;
         
-        .education-info {
+        @media (min-width: 1201px) {
+            margin-right: 0px;
             border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 15px;
         }
     }
     
-    
+    .float-right {
+        float: right;
+        
+        @media (max-width: 1200px) {
+            margin-left: 0px;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 15px;
+        }
+        
+        @media (min-width: 1201px) {
+            margin-left: 10px;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 0px;
+        }
+    }    
     
     .info {
         height: auto;
@@ -343,5 +359,59 @@ body {
         height: 2px;
         background-image: url(../images/line.png);
         background-repeat: repeat-x;
+    }
+}
+
+#contact {
+    background-color: $black-grey;
+    
+    font-weight: 200;
+    h4, .separator {
+        margin-bottom: 25px;
+    }
+    p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .separator {
+        width: 100%;
+        height: 2px;
+        background-image: url(../images/line.png);
+        background-repeat: repeat-x;
+    }
+    
+    .field {
+        width: 50%;
+        
+        margin-bottom: 15px;
+        padding: 15px;
+        
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        
+        border: 0;
+    }
+    
+    .input {
+        height: 40px;
+        text-align: center;
+    }
+        
+    .textbox {
+        height: auto;
+        min-height: 100px;
+        text-align: left;
+    }
+    
+    .sendButton {
+        width: 50%;
+        background-color: white;
+        color: black;
+        
+        &:hover {
+            background-color: $pretty-orange;
+            color: white;
+        }
     }
 }
